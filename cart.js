@@ -105,5 +105,18 @@ window.onload=function (){
     <td scope="col"></td>
 
     </tr>
+    <tr>
+    <th scope="col"></th>
+    <td scope="col"></td>
+    <td scope="col"></td>
+    <td scope="col">
+<button id="btnClean" onclick="clean()" class="btn text-white btn-warning" >Clean shopping cart</button>
+</td>
+
+<td scope="col"><button id="btnBuy" onclick="buy()" class="btn text-white btn-success" >Buy</button>
+</td>
+</tr>
     `;
+    products=JSON.parse(localStorage.getItem("cart"));
+    cart_n.innerHTML= `[${products.length}]`;
 }
