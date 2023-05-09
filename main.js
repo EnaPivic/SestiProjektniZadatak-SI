@@ -122,7 +122,7 @@ function cart2(name,price,url,con,btncart)
     `
   }
 function animation(){
-    const toast=swal.mixin({
+    const toast=new swal.mixin({
         toast:true,
         position: top-end,
         showConfirmButton:false,

@@ -6,7 +6,7 @@ document.getElementById("form").addEventListener("submit",(ee)=>{
     console.log(x.value);
     console.log(p.value);
     if(x.value=="admin@gmail.com" && p.value=="passw0rd"){
-        swal({
+        new swal({
             title:'Welcome',
             html: 'access granted',
             type: 'success'
@@ -15,7 +15,7 @@ document.getElementById("form").addEventListener("submit",(ee)=>{
             loadPage();
         },3000);s
     }else{
-        swal({
+        new swal({
             title:'ERROR',
             html: 'access denied',
             type: 'error'
